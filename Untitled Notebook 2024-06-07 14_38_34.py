@@ -8,4 +8,5 @@ for i in range(1,10):
 
 # COMMAND ----------
 
-
+# MAGIC %sh 
+# MAGIC git status
