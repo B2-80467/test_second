@@ -1,0 +1,225 @@
+
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Samir Shinde} \\ \vspace{1pt}
+    \small +91 8999958572 $|$ \href{mailto:samirshinde011@gmail.com}{{samirshinde011@gmail.com}}    \\
+    \small  
+    \href{https://www.linkedin.com/in/samir-shinde}{\bf LinkedIn} $|$
+    \href{https://github.com/B2-80467}{\bf GitHub}  $|$
+    \href{https://samir-shinde-portfolio.vercel.app/}{\bf Portfolio}
+   
+\end{center}
+%-----------PROJECTS-----------
+\section{Profile}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item
+Data Engineer with 1.2 years of experience in building large-scale data pipelines, ETL processes, and data
+warehouse solutions. Utilized technologies like \textbf{Python, SQL, PySpark, Databricks, and Kafka , Terraform} to develop multi-terabyte scalable big data solutions for Digital Payments  Fintech and E-commerce companies.
+\end{itemize}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{:\hspace{0.06cm}  Python, SQL, Java } \\
+     \textbf{Big Data Technologies}{:\hspace{0.49cm}     Spark, PySpark, Spark SQL, YARN, Hadoop, Hive  } \\
+     \textbf{Streaming Technology}{:\hspace{0.51cm} Kafka, Spark structured streaming} \\
+     \textbf{Cloud computing}{:\hspace{1.38cm}  Databricks, ADLS, Amazon S3 } \\
+     \textbf{Data Engineering Tools}{:\hspace{0.28cm}  Data Modelling, ETL/ELT data Pipeline}\\
+     \textbf{Orchestration}{:\hspace{2.02cm} Airflow, DataBricks workflows} \\
+     \textbf{Infrastructure as Code}{:\hspace{0.4cm} Terraform} \\
+     \textbf{Version Control}{:\hspace{1.6cm} Git, GitHub} \\
+     \textbf{Familiar}{:\hspace{3cm} javaScript} \\
+     
+     
+    }}
+ \end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Digivate Labs}{Gurgaon, India}
+      {Data Engineer (Client: PayU) }{}
+      \resumeItemListStart
+      \resumeItem{Co-led a \textbf{Redshift-to-Databricks migration} PoC, targeting performance benchmarking and compatibility testing for 2 of 24 high-volume reporting users.}
+      \resumeItem{Migrated and optimized SQL queries from Redshift to Databricks SQL, supporting dynamic parameters and repeated execution at scale (4,000+ variations for a single query). }
+      \resumeItem{Ingested ~2 TB of data from \textbf{AWS S3} into Databricks using \textbf{Auto Loader} performed end-to-end validation including schema, row count, and null checks. }
+      \resumeItem{Automated large-scale query execution with \textbf{Databricks Workflows and REST APIs} to simulate real-user workloads and benchmark performance. }
+      \resumeItem{ Integrated real-time \textbf{Kafka streams} from a \textbf{MySQL-Debezium} pipeline directly into the Databricks Bronze layer; implemented deduplication using latest timestamps.}
+
+       \resumeItem{ \textbf{Improved query performance by 2–3x} using \textbf{ Delta Lake} features like \textbf{Liquid Clustering} and \textbf{Spark optimizations}}
+        % \item Developed an automated invoicing system, enabling dynamic pricing adjustments on cloud service provider invoices.    
+   
+    \resumeItemListEnd
+
+     \resumeSubheading
+      {Digivate Labs}{Gurgaon, India}
+      {Data Engineer (Client: Battery Smart) }{}
+      \resumeItemListStart
+       \resumeItem{ Consolidated fragmented data workflows by migrating  Python  scripts to PySpark and transitioning \textbf{Airflow DAGs to Databricks Workflows}, enabling a \textbf{unified lakehouse architecture}. Decommissioned legacy systems eg \textbf{Redis, Apache Pinot , Apache Airflow} reducing \textbf{platform complexity by 60\%} and improving pipeline reliability.}
+        \resumeItem{Achieved \textbf{3x} performance improvement by implementing \textbf{partitioning, caching, broadcast joins, and Delta Lake optimizations like Z-ORDER, OPTIMIZE, VACUUM,} significantly reducing job runtimes from hours to minutes.}
+        \resumeItem{Implemented \textbf{Slack-integrated alerting} and retry mechanisms in data pipelines to enable \textbf{real-time monitoring} and \textbf{automated failure notifications}, reducing incident response time by 98\% and improving pipeline reliability}
+        \resumeItem{Conducted detailed validation using \textbf{schema checks, row-level comparisons, time-window consistency, and anomaly detection} to ensure data accuracy and integrity across legacy and refactored pipelines}       
+      \resumeItemListEnd
+
+
+
+      \resumeSubheading
+      {Digivate Labs}{Gurgaon, India}
+      {Data Engineer}{}
+      \resumeItemListStart
+        \resumeItem{Designed an \textbf{asynchronous web-scraping} workflow using \textbf{Selenium} to extract unstructured text from 200,000+ websites, storing the data in \textbf{Delta Lake} for downstream ML-based article classification using \textbf{Databricks MLflow}.}
+        
+        \resumeItem{Developed a \textbf{PDF processing pipeline} to ingest 1,000+ downloaded news article PDFs, using \textbf{Apache Tika} to extract text content via OCR, which was then passed to pre-trained \textbf{LLMs} for classification and downstream analytics, with structured outputs stored in \textbf{Delta Lake}.}
+        
+        \resumeItem{Implemented end-to-end workflows, including data ingestion (web, PDF), unstructured text processing, and \textbf{Delta Lake} storage, reducing manual data processing efforts by \textbf{70\%}.}       
+      \resumeItemListEnd
+
+     
+
+  \resumeSubHeadingListEnd
+
+
+
+
+%-----------CERTIFICATIONS-----------
+% \section{Certifications}
+%   \resumeSubHeadingListStart
+%   {\href{https://www.databricks.com/}{\bf Databricks Associate Data Engineer}} $|$
+%   {\href{https://www.databricks.com/}{\bf Databricks Professional Data Engineer}} $|$
+
+%      {\href{https://www.terraform.io/}{\bf Terraform Associate (003)}}
+%   \resumeSubHeadingListEnd
+
+
+\section{Certifications}
+\begin{itemize}
+  \item \href{https://credentials.databricks.com/df731154-978b-4664-87f3-0ab07953f5fb#acc.P43IyCSn}{\textbf{Databricks Associate Data Engineer}}
+  \item \href{https://credentials.databricks.com/c0bc81ab-1ada-45b0-97b0-ccb8de5d3f1f#acc.7mIj2R4g}{\textbf{Databricks Professional Data Engineer}}
+  \item \href{https://www.credly.com/badges/5d72899e-e74f-4dc1-82cd-1bc01703b137/public_url}{\textbf{Terraform Associate (003)}}
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Centre for Development of Advanced Computing (C-DAC)}{Pune, Maharashtra}  
+      {Post Graduate Diploma in Big Data Analytics}{September 2023 – March 2024}
+
+
+      \resumeSubheading
+      {Sinhgad College of Engineering}{Pune, Maharashtra}  
+      {Bachelor of Engineering}{July 2016 – May 2021}
+   
+  \resumeSubHeadingListEnd
+%-------------------------------
+
+%
+
+\end{document}
